@@ -1,5 +1,10 @@
 @charset "utf-8";
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 /*メインの画像をグリッドの配置にする (ここから) */
 .product-list {
     display: grid;
@@ -34,3 +39,11 @@
     margin-right: 15px;
 }
 /* headerとfooterを横並びにする(ここまで) */ 
+
+/*View More を中央に配置(ここから)*/
+.link-text {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+}
+/*View More を中央に配置(ここまで)*/
