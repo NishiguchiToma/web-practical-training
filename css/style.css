@@ -47,3 +47,27 @@ a {
     margin-top: 40px;
 }
 /*View More を中央に配置(ここまで)*/
+
+/* レスポンシブ対応デザイン*/
+@media (max-width: 600px){
+    .product-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .product-list p {
+        font-size: 0.7rem;
+        line-height: 1.4;
+        margin-top: 6px;
+    }
+    .site-title img {
+        height: 24px;
+        width: auto;
+    }
+    .wrapper {
+        padding: 0 1.5;
+        margin: auto;
+    }
+    #header {
+        justify-content: space-between;
+    }
+}
