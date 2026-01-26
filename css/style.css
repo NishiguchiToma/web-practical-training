@@ -5,6 +5,8 @@ a {
     color: black;
 }
 
+/* ♦♦♦ここからindex♦♦♦ */
+
 /*メインの画像をグリッドの配置にする (ここから) */
 .product-list {
     display: grid;
@@ -48,6 +50,45 @@ a {
 }
 /*View More を中央に配置(ここまで)*/
 
+/* ♦♦♦ここからItemのデザイン♦♦♦*/
+.page-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+.item {
+    display: flex;
+    max-width: 800px;
+    justify-content: space-between;
+    
+}
+
+.item-img {
+    width: 42%;
+}
+
+.item .item-text {
+    width: 50%;
+}
+
+.item .item-img img {
+    width: 100%;
+}
+
+.item .item-text p {
+    margin-bottom: 20px;
+}
+
+.item table td {
+    padding-left: 1rem;
+}
+/*テーブルの編集*/
+.item table th {
+    text-align: left;
+    font-weight: normal;
+}
+
 /* レスポンシブ対応デザイン*/
 @media (max-width: 600px){
     .product-list {
@@ -69,5 +110,12 @@ a {
     }
     #header {
         justify-content: space-between;
+    }
+    .item {
+        flex-direction: column;
+    }
+    .item .item-img,
+    .item .item-text {
+        width: 100%;
     }
 }
