@@ -166,4 +166,19 @@ a {
     .item .item-text {
         width: 100%;
     }
+    #company .info th,
+    #company .info td{
+        display: block;
+        width: 100%;
+        border-bottom: none;
+        padding: 0 10px;
+    }
+
+    #company .info tr {
+        border-bottom:  1px solid #dedbdb;
+    }
+    #company .map {
+        width: 100%;
+        
+}
 }
